@@ -15,19 +15,20 @@
 
   </script>
   -----------------------------------------------------------------------------------------------
-  <p id="drie"></p>
-  <p id="twee"></p>
-  <p id="drie"></p>
-  <p id="vier"></p>  <button onclick="locate()">zoek</button>
-  <p id="vijf"></p>  <button onclick="check()">Check</button>
-  <p id="zes"></p>
 
+    
+  <p id="drie"></p>  <button onclick="lenght()">lengte</button>
+  <p id="vier"></p>  <button onclick="locate()">Zoek</button>
+  <p id="vijf"></p>  <button onclick="check()">Check</button>
+  <p id="zes"></p>   <button onclick="slice()">Pak</button>
+  <p id="zeven"></p>   <button onclick="slice()">Pak</button>
 
     <script>
+    function lenght(){
     var zin = "Aplicatie ontwikkelaar";
     var length = zin.length;
-      document.getElementById("drie").innerHTML = zin;
-      document.getElementById("twee").innerHTML = length;
+      document.getElementById("drie").innerHTML = "de lengte van "+zin +" is : "+length;
+    }
 
     function locate(){
     var woord = "Aplicatie ontwikkelaar";
@@ -39,6 +40,12 @@
     var zin = "Aplicatie ontwikkelaar";
     var s = zin.includes("wikkelaar");
       document.getElementById("vijf").innerHTML =  zin + " includes wikkelaar? : " + s;
+    }
+
+    function slice(){
+    var zin = "Aplicatie ontwikkelaar";
+    var slice = zin.slice(13,22);
+      document.getElementById("zes").innerHTML =  "pakt : "+ slice + " uit Aplicatie ontwikkelaar";
     }
 
     </script>
