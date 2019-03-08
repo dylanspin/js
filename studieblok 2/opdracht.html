@@ -16,38 +16,67 @@
   </script>
   -----------------------------------------------------------------------------------------------
 
-    
+
   <p id="drie"></p>  <button onclick="lenght()">lengte</button>
   <p id="vier"></p>  <button onclick="locate()">Zoek</button>
   <p id="vijf"></p>  <button onclick="check()">Check</button>
   <p id="zes"></p>   <button onclick="slice()">Pak</button>
-  <p id="zeven"></p>   <button onclick="slice()">Pak</button>
-
+  <p id="zeven"></p> <button onclick="replace()">vervang</button>
+  <p id="acht"></p>  <button onclick="caps()">hoofd_letters</button>
     <script>
+
     function lenght(){
-    var zin = "Aplicatie ontwikkelaar";
-    var length = zin.length;
-      document.getElementById("drie").innerHTML = "de lengte van "+zin +" is : "+length;
+      var zin = "Aplicatie ontwikkelaar";
+      var length = zin.length;
+        document.getElementById("drie").innerHTML = "de lengte van "+zin +" is : "+length;
     }
 
     function locate(){
-    var woord = "Aplicatie ontwikkelaar";
-    var loc = woord.indexOf(" ontwikkelaar",0);
-      document.getElementById("vier").innerHTML = "ontwikkelaar begint na : "+loc+" letters";
+      var woord = "Aplicatie ontwikkelaar";
+      var loc = woord.indexOf(" ontwikkelaar",0);
+        document.getElementById("vier").innerHTML = "ontwikkelaar begint na : "+loc+" letters";
     }
 
-    function check() {
-    var zin = "Aplicatie ontwikkelaar";
-    var s = zin.includes("wikkelaar");
-      document.getElementById("vijf").innerHTML =  zin + " includes wikkelaar? : " + s;
+    function check(){
+      var zin = "Aplicatie ontwikkelaar";
+      var s = zin.includes("wikkelaar");
+        document.getElementById("vijf").innerHTML =  zin + " includes wikkelaar? : " + s;
     }
 
     function slice(){
-    var zin = "Aplicatie ontwikkelaar";
-    var slice = zin.slice(13,22);
-      document.getElementById("zes").innerHTML =  "pakt : "+ slice + " uit Aplicatie ontwikkelaar";
+      var zin = "Aplicatie ontwikkelaar";
+      var slice = zin.slice(13,22);
+        document.getElementById("zes").innerHTML =  "pakt : "+ slice + " uit Aplicatie ontwikkelaar";
     }
 
-    </script>
+     var zin = "Aplicatie ontwikkelaar";
+     document.getElementById("zeven").innerHTML = zin;
+
+    function replace(){
+      var zin = "Aplicatie ontwikkelaar";
+      var replace = zin.replace("ontwikkelaar","programmeur");
+        document.getElementById("zeven").innerHTML = replace;
+    }
+
+    var zin = "Aplicatie ontwikkelaar";
+    document.getElementById("acht").innerHTML = zin;
+
+    function caps(){
+      var zin = "Aplicatie ontwikkelaar";
+      var caps = zin.toUpperCase();
+        document.getElementById("acht").innerHTML = caps;
+    }
+    </script><br>
+
+    -----------------------------------------------------------------------------------------------
+<p id="letter"></p>
+
+<script>
+var woord = "opleiding";
+var letters;
+
+  document.getElementById("letter").innerHTML = caps;
+</script>
+
   </body>
 </html>
