@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>java script</title>
+  </head>
+  <body>
+<h1>javascript</h1>
+      <p id="demo">dit is een test</p>
+
+      <button type="button" onclick='document.getElementById("demo").innerHTML = "dit is javascript"'>Click Me!</button><br>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize='60px'">groot</button><br>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize='11px'">klein</button><br>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize='20px'">normaal</button><br>
+      <button type="button" onclick="document.getElementById('demo').style.display='none'">delete</button><br>
+
+      ---------------------------------------------------------------------------------------------------------
+      <p id="voor"></p>
+      <p id="achter"></p>
+
+      <script>
+        var voor = "dylan";
+        var achter = "spin";
+        document.getElementById("voor").innerHTML = voor + " " + achter;
+
+        window.alert(voor + " " + achter);
+
+        document.getElementById("demo").innerHTML = voor + " " + achter;
+      </script><br>
+      ---------------------------------------------------------------------------------------------------------
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>opdracht</title>
+  </head>
+  <body>
+    <h1>Object huis</h1>
+    <p id="een"></p>
+  <script>
+    var huis = {inhoud:"dingen",oppervlakte:"40-30",plaats:"Gieterveen",soort:"boederij"};
+
+    document.getElementById("een").innerHTML =
+    huis.inhoud +" "+ huis.oppervlakte +" "+ huis.plaats +" "+ huis.soort;
+
+  </script>
+  -----------------------------------------------------------------------------------------------
+  <p id="drie"></p>
+  <p id="twee"></p>
+  <p id="drie"></p>
+  <p id="vier"></p>  <button onclick="check()">Check</button>
+  <p id="vijf"></p>  <button onclick="locate()">Zoek</button>
+  <p id="zes"></p>
+
+
+    <script>
+    var zin = "Aplicatie ontwikkelaar";
+    var length = zin.length;
+    document.getElementById("drie").innerHTML = zin;
+    document.getElementById("twee").innerHTML = length;
+
+    function locate(){
+    var loc;
+    }
+
+    function check() {
+    var zin = "Aplicatie ontwikkelaar";
+    var s = zin.includes("wikkelaar");
+    document.getElementById("vier").innerHTML =  zin + " includes wikkelaar? : " + s;
+    }
+
+    </script>
+  </body>
+</html>

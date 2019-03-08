@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>reken</title>
+  </head>
+  
+  <body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <script>
+    var a = 3;
+    var b = 4;
+    var c = 5;
+    var d = 1;
+
+      document.getElementById("a").innerHTML = a + b + c;
+      document.getElementById("b").innerHTML = a + c - b;
+      document.getElementById("c").innerHTML = c / a - d;
+      document.getElementById("d").innerHTML = (c - a) * b;
+      document.getElementById("e").innerHTML = (b + c ) / c;
+    </script><br>
+---------------------------------------------------------------------------------------------------------<br>
+
+    <p id="Cijfer"></p>
+    <script>
+    function test(Cijfer1 , Cijfer2) {
+    return Cijfer1 * Cijfer2;
+    }
+    document.getElementById("Cijfer").innerHTML = test(4 , 3);
+    </script>
+
+---------------------------------------------------------------------------------------------------------<br>
+
+    <form>
+    Nummer_1  <input type="text" name="num1" id="num1"><br>
+    Nummer_2  <input type="text" name="num2" id="num2"><br>
+      <select id="kies">
+        <option value="add">plus</option>
+        <option value="min">min</option>
+        <option value="deel">deel</option>
+        <option value="keer">keer</option>
+      </select>
+      <button type="button" onclick="Rekenen()">reken_uit</button>
+    </form>
+
+    <div id="antwoord"></div>
+
+
+   <script src="main.js"></script>
+      </body>
+    </html>
