@@ -18,25 +18,27 @@
   <p id="drie"></p>
   <p id="twee"></p>
   <p id="drie"></p>
-  <p id="vier"></p>  <button onclick="check()">Check</button>
-  <p id="vijf"></p>  <button onclick="locate()">Zoek</button>
+  <p id="vier"></p>  <button onclick="locate()">zoek</button>
+  <p id="vijf"></p>  <button onclick="check()">Check</button>
   <p id="zes"></p>
 
 
     <script>
     var zin = "Aplicatie ontwikkelaar";
     var length = zin.length;
-    document.getElementById("drie").innerHTML = zin;
-    document.getElementById("twee").innerHTML = length;
+      document.getElementById("drie").innerHTML = zin;
+      document.getElementById("twee").innerHTML = length;
 
     function locate(){
-    var loc;
+    var woord = "Aplicatie ontwikkelaar";
+    var loc = woord.indexOf(" ontwikkelaar",0);
+      document.getElementById("vier").innerHTML = "ontwikkelaar begint na : "+loc+" letters";
     }
 
     function check() {
     var zin = "Aplicatie ontwikkelaar";
     var s = zin.includes("wikkelaar");
-    document.getElementById("vier").innerHTML =  zin + " includes wikkelaar? : " + s;
+      document.getElementById("vijf").innerHTML =  zin + " includes wikkelaar? : " + s;
     }
 
     </script>
