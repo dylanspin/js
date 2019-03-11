@@ -69,14 +69,23 @@
     </script><br>
 
     -----------------------------------------------------------------------------------------------
-<p id="letter"></p>
 
-<script>
-var woord = "opleiding";
-var letters;
 
-  document.getElementById("letter").innerHTML = caps;
-</script>
+
+    <div id="plaats"></div>
+    <script>
+      var plaats = document.getElementById('plaats');
+      var letters = "";
+      var woord = "opleiding";
+      var i;
+
+        for (i = 0; i <woord.length; i++){  //for loop met de lengte van woord
+          var letter = woord.charAt(i)
+         letters += letter +"\n";
+        }
+
+          plaats.textContent = letters + ''; //plaatst het in de div
+    </script>
 
   </body>
 </html>
