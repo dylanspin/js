@@ -3,20 +3,12 @@ div.vak{
   background-color:#E2E1E1;
   height: 100px;
   width: 100px;
+  cursor: crosshair;
 }
+.back-green { background-color: green; }
+.back-red { background-color: red; }
 
-div.vak2{
-  border:3px solid gray;
-  background-color:#E2E1E1;
-  height: 100px;
-  width: 100px;
-}
-div.vak3{
-  border:3px solid gray;
-  background-color:#E2E1E1;
-  height: 100px;
-  width: 100px;
-}
+
 div.vierkant{
 margin-left: 40%;
 }

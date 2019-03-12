@@ -1,3 +1,10 @@
-$("#a").on("click", function() {
-    $(this).css("background-color", "red");
+
+
+$("#div4").on("click", function() {
+    $(this).toggleClass('back-red');
 });
+
+
+function() {
+    $(this).css("background-color", "");
+};
