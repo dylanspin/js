@@ -1,21 +1,35 @@
 div.vak{
-  border:3px solid gray;
-  background-color:#E2E1E1;
+  border:3px solid white;
+  background-color:#1D1515;
   height: 100px;
   width: 100px;
   cursor: crosshair;
 }
-.back-green { background-color: green; }
-.back-red { background-color: red; }
+.back-green {
+  background-color: #E2E1E1;
+}
 
+.back-red {
+  background-color: red;
+ }
 
 div.vierkant{
 margin-left: 40%;
 }
 div.center{
-
   text-align: center;
 }
+div.reset{
+margin-top: 430px;
+}
+
+input[type=submit]{
+    width: 150px;  height: 40px;
+    color: white;
+    background-color: #F45A18;
+    border: none;
+}
+
 body{
   color: white;
   background-color: #1D1515;
