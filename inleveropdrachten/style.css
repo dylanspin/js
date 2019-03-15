@@ -40,3 +40,7 @@ html
 h1{
   font-size: 400%;
 }
+h1.een{
+  font-size: 480%;
+  line-height:1px;
+}
