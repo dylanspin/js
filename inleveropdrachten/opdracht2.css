@@ -11,7 +11,13 @@ div.center{
 }
 div.vierkant{
 margin-left: 30%;
-
+}
+div.geen{
+  margin-left: 80%;
+  border: 5px solid white;
+  width: 220px;
+  height: 50px;
+  line-height: 1px;
 }
 html
 .column {
