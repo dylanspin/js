@@ -1,0 +1,35 @@
+
+div.vak{
+  border:3px solid white;
+  background-color:#1D1515;
+  height: 100px;
+  width: 100px;
+  cursor: crosshair;
+}
+div.center{
+  text-align: center;
+}
+div.vierkant{
+margin-left: 30%;
+
+}
+html
+.column {
+  float: left;
+  width: 9.03%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body{
+  color: white;
+  background-color: #1D1515;
+}
+
+h1.hoofd{
+  font-size: 400%;
+}
