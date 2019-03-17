@@ -1,33 +1,110 @@
 
+LINKS = 37,
+RECHTS = 39,
+BOVEN = 38,
+BENEDEN = 40;
+var loc = 22;
 
-  function Block(Block) {
+document.getElementById(loc).style.backgroundColor = "#1B63DF";
+function Block(Block) {
+ var i;
+ for (var i = 0; i <=50; i += 10) {}
+  if(loc == 5 ) {//moet veel korten met een for loop ofzo (het werkt wel)
+    loc -= 1;
+  }
+  else if (loc == 15) {
+     loc -= 1;
+  }
+  else if (loc == 25) {
+     loc -= 1;
+  }
+  else if (loc == 35) {
+     loc -= 1;
+  }
+  else if (loc == 45) {
+     loc -= 1;
+  }
+  else if (loc == -1) {
+     loc += 1;
+  }
+  else if (loc == 9) {
+     loc += 1;
+  }
+  else if (loc == 19) {
+     loc += 1;
+  }
+  else if (loc == 29) {
+     loc += 1;
+  }
+  else if (loc == 39) {
+     loc += 1;
+  }
+  else if (loc == 49) {
+     loc += 1;
+  }
+  else if (loc == -10) {
+     loc += 10;
+  }
+  else if (loc == -9) {
+     loc += 10;
+  }
+  else if (loc == -8) {
+     loc += 10;
+  }
+  else if (loc == -7) {
+     loc += 10;
+  }
+  else if (loc == -6) {
+     loc += 10;
+  }
+  else if (loc == 50) {
+     loc -= 10;
+  }
+  else if (loc == 51) {
+     loc -= 10;
+  }
+  else if (loc == 52) {
+     loc -= 10;
+  }
+  else if (loc == 53) {
+     loc -= 10;
+  }
+  else if (loc == 54) {
+     loc -= 10;
+  }
 
-  var loc = 2.3;
-  
-      LINKS = 37,
-      RECHTS = 39,
-      BOVEN = 38,
-      BENEDEN = 40;
-
-      switch (Block) {
-      case LINKS:
-       document.getElementById(1.1).style.backgroundColor = "#1B63DF";
-        break;
-      case RECHTS:
-       document.getElementById(1.2).style.backgroundColor = "#1B63DF";
-        break;
-      case BOVEN:
-       document.getElementById(1.3).style.backgroundColor = "#1B63DF";
-        break;
-      case BENEDEN:
-       document.getElementById(1.4).style.backgroundColor = "#1B63DF";
-         break;
-      default:
-       document.querySelector("#geen").innerHTML = "<h1>geen arrow key</h1>";
-         break;
-    }
-
-}
+     else {
+       switch (Block) {
+         case LINKS:
+           loc -= 10;
+            document.getElementById(loc).style.backgroundColor = "#1B63DF";
+            document.getElementById(loc+10).style.backgroundColor = "#1D1515";
+            document.querySelector("#geen").innerHTML = "<h1>" + loc + "</h1>";
+          break;
+          case RECHTS:
+           loc += 10;
+            document.getElementById(loc).style.backgroundColor = "#1B63DF";
+            document.getElementById(loc-10).style.backgroundColor = "#1D1515";
+            document.querySelector("#geen").innerHTML = "<h1>" + loc + "</h1>";
+          break;
+          case BOVEN:
+           loc += 1;
+            document.getElementById(loc).style.backgroundColor = "#1B63DF";
+            document.getElementById(loc-1).style.backgroundColor = "#1D1515";
+            document.querySelector("#geen").innerHTML = "<h1>" + loc + "</h1>";
+          break;
+          case BENEDEN:
+           loc -= 1;
+            document.getElementById(loc).style.backgroundColor = "#1B63DF";
+            document.getElementById(loc+1).style.backgroundColor = "#1D1515";
+            document.querySelector("#geen").innerHTML = "<h1>" + loc + "</h1>";
+          break;
+          default:
+           document.querySelector("#geen").innerHTML = "<h1>geen arrow key</h1><br>";
+          break;
+         }
+      }
+  }
 
     function check(event) {
       var indruk = event || window.event,

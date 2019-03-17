@@ -12,6 +12,9 @@ div.center{
 div.vierkant{
 margin-left: 30%;
 }
+div.button{
+margin-left: 80%;
+}
 div.geen{
   margin-left: 80%;
   border: 5px solid white;
@@ -30,7 +33,12 @@ html
   clear: both;
   display: table;
 }
-
+input[type=submit]{
+    color: white;
+    background-color: #1D1515;
+    border: none;
+    font-size: 300%;
+}
 body{
   color: white;
   background-color: #1D1515;
