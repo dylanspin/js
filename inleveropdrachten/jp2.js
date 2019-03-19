@@ -7,12 +7,12 @@ var loc = 22;
 
 document.getElementById(loc).style.backgroundColor = "#1B63DF";
 function Block(Block) {
- var i;
- for (var i = 0; i <=50; i += 10) {}
+ //var i;
+ //for (var i = 0; i <=50; i += 10) {}
   if(loc == 5 ) {//moet veel korten met een for loop ofzo (het werkt wel)
-    loc -= 1;
+    loc -= 1;    //lukt niet met een for loop weet niet waarom
   }
-  else if (loc == 15) {
+ else if (loc == 15) {
      loc -= 1;
   }
   else if (loc == 25) {
