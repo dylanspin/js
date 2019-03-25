@@ -12,7 +12,7 @@ function Block(Block) {
   if(loc == 5 ) {//moet veel korten met een for loop ofzo (het werkt wel)
     loc -= 1;    //lukt niet met een for loop weet niet waarom
   }
- else if (loc == 15) {
+  else if (loc == 15) {
      loc -= 1;
   }
   else if (loc == 25) {

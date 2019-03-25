@@ -1,0 +1,17 @@
+
+console.log(naam); //print de array(naam)
+
+console.log(naam.length) //print de lengte van de array(naam) in de console
+
+naam.push('iets1','iets2'); //voegt iets1 en iets2 aan de array(naam)
+
+naam.splice(2,3); //removed num2 en 3 uit de array naam
+
+var a = ['','','','',''];
+var c = Object.assign([],a);
+
+console.log(c); //print het kopie van array a (array c)
+
+setTimeout(function(){
+  document.querySelector("#vak1").innerHTML = "<h1>"+array1[ii] +"</h1>";
+ },1000);  //tijd function na 1000 tijd(idk) runt hij de code
