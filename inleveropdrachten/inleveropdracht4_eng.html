@@ -7,42 +7,52 @@
   </head>
   <body>
     <div class="taal">
-      <button><a href="inleveropdracht4.html"><h2>dutch</h2></a></button>
+      <button><a href="inleveropdracht4.html"><h2>Dutch</h2></a></button>
     </div>
 
-<div class="rechts">
-  <div class="top">
-    <h1 class="een">form</h1>
-  </div>
+    <div class="rechts">
+      <div class="top">
+        <h1 class="een">Form</h1>
+      </div>
 
+      <div class="rand">
+      </div>
 
-  <div class="select">
-    <form action="inleveropdracht4" method="post">
-      <select>
-        <option value="heer">sir</option>
-        <option value="mevrouw">mis</option>
-      </select>
-    </form>
-  </div><br>
+      <div class="invoer">
+        <div class="select">
+          <form action="inleveropdracht4_eng" method="post">
+            <select id="geslacht">
+              <option value="kies" id="kies">Choose</option>
+              <option value="heer" id="heer">Sir</option>
+              <option value="mevrouw" id="mevrouw">Mis</option>
+            </select>
+          </form>
+        </div><br>
 
-  <div class="info">
-    <form>
-      <input type="text" name="naam" placeholder="name"><br><br>
-      <input type="text" name="adres" placeholder="address"><br><br>
-      <input type="text" name="woonplaats" placeholder="residence"><br><br>
-      <input type="text" name="postcode" placeholder="zip code"><br><br>
-      <input type="text" name="land" placeholder="country"><br><br>
-      <input type="date" name="geboorte" placeholder="birthdate"><br><br>
-      <input type="text" name="beroep" placeholder="job"><br><br>
-    </form>
-  </div>
+        <form>
+          <input type="text" name="naam" id="naam"placeholder="Name"><br><br>
+          <input type="text" name="adres" id="adres"placeholder="Address"><br><br>
+          <input type="text" name="woonplaats" id="woon" placeholder="Residence"><br><br>
+          <input type="text" name="postcode" id="post" placeholder="Zip-code"><br><br>
+          <input type="text" name="land" id="land" placeholder="Country"><br><br>
+          <input type="date" name="geboorte" id="geboort" placeholder="Birthdate"><br><br>
+          <input type="text" name="beroep" id="beroep" placeholder="Job"><br><br>
+        </form>
+      </div>
 
-  <div>
-    <form>
-      <input type="text" name="opmerking" placeholder="comments">
-      <input type="submit" name="stuur" value="send">
-    </form>
-  </div>
-</div>
+      <div class="rand2">
+      </div>
+
+      <div class="comments">
+        <h1>Comments</h1><br>
+        <textarea rows="8" cols="35" id="comments" class="text"></textarea>
+        <form>
+          <input type="submit" name="send" id="stuur" value="stuur">
+        </form>
+      </div>
+    </div>
+
+  <script src="jp4.js">
+</script>
   </body>
 </html>

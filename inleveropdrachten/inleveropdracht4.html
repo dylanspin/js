@@ -4,48 +4,51 @@
     <meta charset="utf-8">
     <title>opdracht_4</title>
     <link rel="stylesheet" href="inleveropdracht4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jp4.js"></script>
   </head>
   <body>
 
   <div class="taal">
-    <button><a href="inleveropdracht4_eng.html"><h2>engels</h2></a></button>
+    <button id="twee"><a href="inleveropdracht4_eng.html"><h2>Engels</h2></a></button>
   </div>
 
 <div class="rechts">
   <div class="top">
-    <h1 class="een">formulier</h1>
+    <h1 class="een">Formulier</h1>
   </div>
 
+  <div class="rand">
+  </div>
 
-  <div class="select">
-    <form action="inleveropdracht4" method="post">
-      <select>
-        <option value="heer">heer</option>
-        <option value="mevrouw">mevrouw</option>
-      </select>
-    </form>
-  </div><br>
+  <div class="invoer">
+    <div class="select">
+      <div class="select" id="vak1" onclick="select()"><h2>&emsp;Heer<h2></div>
+      <div class="select1" id="vak2" onclick="select()"><h2>&emsp;mevrouw</h2></div>
+    </div><br><br>
 
-  <div class="info">
     <form>
-      <input type="text" name="naam" placeholder="naam"><br><br>
-      <input type="text" name="adres" placeholder="adres"><br><br>
-      <input type="text" name="woonplaats" placeholder="woonplaats"><br><br>
-      <input type="text" name="postcode" placeholder="postcode"><br><br>
-      <input type="text" name="land" placeholder="land"><br><br>
-      <input type="date" name="geboorte" placeholder="geboortedatum"><br><br>
-      <input type="text" name="beroep" placeholder="beroep"><br><br>
+      <input type="text" name="text" id="0"placeholder="Naam"onchange=""><br><br>
+      <input type="text" name="text" id="1"placeholder="Adres" onchange=""><br><br>
+      <input type="text" name="text" id="2" placeholder="Woonplaats" onchange=""><br><br>
+      <input type="text" name="text" id="3" placeholder="Postcode" onchange=""><br><br>
+      <input type="text" name="text" id="4" placeholder="Land" onchange=""><br><br>
+      <input type="text" name="text" id="5" placeholder="Geboortedatum" onchange="leeftijd()"><br><br>
+      <input type="text" name="text" id="6" placeholder="Beroep" onchange=""><br><br>
     </form>
   </div>
 
-  <div>
-    <form>
-      <input type="text" name="opmerking" placeholder="opmerkingen">
-      <input type="submit" name="stuur" value="stuur">
-    </form>
+  <div class="rand2">
+  </div>
+  <div class="comments">
+    <h1>Comments</h1><br>
+    <textarea rows="8" cols="35" id="comments" class="text"></textarea><br>
+    <button class="twee" onclick="" id="een">stuur</button>
   </div>
 </div>
+<div class="" id="test">
 
 
+</div>
   </body>
 </html>
