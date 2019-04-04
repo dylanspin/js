@@ -50,10 +50,17 @@ div.comments{
 div.gender{
   margin-top: -70px;
   margin-left: 40px;
+  cursor: crosshair;
 }
 div.gender2{
 margin-top: -60px;
-margin-left: 260px;}
+margin-left: 260px;
+cursor: crosshair;
+}
+div.leeftijd{
+  margin-top: -135px;
+  margin-left: 340px;
+}
 body{
   color: white;
   background-color: #1D1515;

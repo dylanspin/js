@@ -36,17 +36,23 @@ var beroep = document.getElementById('beroep');
 
      function leeftijd(){
        var geboorte = document.getElementById('5').value;
+       var info = document.getElementById('leeftijd');
        var dag = +new Date(geboorte);
-       var lf= ((Date.now() - dag) / (31557600000));
+       var lf = ((Date.now() - dag) / (31557600000));
        var leeftijd = parseInt(lf);
-       var theBday = document.getElementById('test1');
-       document.getElementById('test').innerHTML = leeftijd;
-     }
+       var op = 0.1;
+        document.getElementById('leeftijd').innerHTML = "<h1>"+leeftijd+"</h1>";
+        var timer = setInterval(function () {
+          if (op >= 1){
+              clearInterval(timer);
+          }
+            info.style.opacity = op;
+            info.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.005;
+        }, 10);
+      }
 
-
-
-
- function fout(){
+ function naam(){
    var r =/^[a-zA-Z]/;
    console.log(r.test(naam));
      if(r){
@@ -55,26 +61,4 @@ var beroep = document.getElementById('beroep');
      else{
        window.alert("Geboortedatum");
      }
-
-     /*if(){
-
-     }
-     else{
-       window.alert("Geboortedatum");
-     }
-     if(){
-
-     }
-     else{
-       window.alert("Geboortedatum");
-     }*/
-
-     /*$(document).ready(function() {
-
-     $('#0').hide();
-
-
-   });*/
-
-
  }

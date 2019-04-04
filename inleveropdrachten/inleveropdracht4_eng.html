@@ -4,55 +4,48 @@
     <meta charset="utf-8">
     <title>opdracht_4</title>
     <link rel="stylesheet" href="inleveropdracht4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jp4.js"></script>
   </head>
   <body>
-    <div class="taal">
-      <button><a href="inleveropdracht4.html"><h2>Dutch</h2></a></button>
-    </div>
 
-    <div class="rechts">
-      <div class="top">
-        <h1 class="een">Form</h1>
-      </div>
+  <div class="taal">
+    <button id="twee"><a href="inleveropdracht4.html"><h2>Dutch</h2></a></button>
+  </div>
 
-      <div class="rand">
-      </div>
+<div class="rechts">
+  <div class="top">
+    <h1 class="een">Form</h1>
+  </div>
 
-      <div class="invoer">
-        <div class="select">
-          <form action="inleveropdracht4_eng" method="post">
-            <select id="geslacht">
-              <option value="kies" id="kies">Choose</option>
-              <option value="heer" id="heer">Sir</option>
-              <option value="mevrouw" id="mevrouw">Mis</option>
-            </select>
-          </form>
-        </div><br>
+  <div class="rand">
+  </div>
 
-        <form>
-          <input type="text" name="naam" id="naam"placeholder="Name"><br><br>
-          <input type="text" name="adres" id="adres"placeholder="Address"><br><br>
-          <input type="text" name="woonplaats" id="woon" placeholder="Residence"><br><br>
-          <input type="text" name="postcode" id="post" placeholder="Zip-code"><br><br>
-          <input type="text" name="land" id="land" placeholder="Country"><br><br>
-          <input type="date" name="geboorte" id="geboort" placeholder="Birthdate"><br><br>
-          <input type="text" name="beroep" id="beroep" placeholder="Job"><br><br>
-        </form>
-      </div>
+  <div class="invoer">
+    <div class="select">
+      <div class="select" id="vak1" onclick="select()"><h2>&emsp;Sir<h2></div>
+      <div class="select1" id="vak2" onclick="select()"><h2>&emsp;Mis</h2></div>
+    </div><br><br>
 
-      <div class="rand2">
-      </div>
+    <form>
+      <input type="text" name="0" id="0"placeholder="Name"onchange="fout()"><br><br>
+      <input type="text" name="1" id="1"placeholder="Address" onchange=""><br><br>
+      <input type="text" name="2" id="2" placeholder="residence" onchange=""><br><br>
+      <input type="text" name="3" id="3" placeholder="Zip-code" onchange=""><br><br>
+      <input type="text" name="4" id="4" placeholder="Country" onchange=""><br><br>
+      <input type="date" name="5" id="5" placeholder="Birth date" onchange="leeftijd()"><br><br>
+      <input type="text" name="6" id="6" placeholder="Job" onchange=""><br><br>
+    </form>
+  </div>
 
-      <div class="comments">
-        <h1>Comments</h1><br>
-        <textarea rows="8" cols="35" id="comments" class="text"></textarea>
-        <form>
-          <input type="submit" name="send" id="stuur" value="stuur">
-        </form>
-      </div>
-    </div>
-
-  <script src="jp4.js">
-</script>
+  <div class="rand2">
+  </div>
+  <div class="comments">
+    <h1>Comments</h1><br>
+    <textarea rows="8" cols="35" id="comments" class="text"></textarea><br>
+    <button class="twee" onclick="" id="een">Send</button>
+  </div>
+</div>
+<div class="leeftijd" id="leeftijd" ></div>
   </body>
 </html>
